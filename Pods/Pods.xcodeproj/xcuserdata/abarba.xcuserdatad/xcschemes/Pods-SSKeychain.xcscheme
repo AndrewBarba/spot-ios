@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1C79D71B9B774DB898FFC723"
-               BuildableName = "libPods-TLDataManager.a"
-               BlueprintName = "Pods-TLDataManager"
+               BlueprintIdentifier = "D378F5EA4C92412F9905B2E9"
+               BuildableName = "libPods-SSKeychain.a"
+               BlueprintName = "Pods-SSKeychain"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
