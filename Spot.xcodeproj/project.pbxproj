@@ -56,8 +56,9 @@
 		B84256CB196C9B03003722D9 /* SpotTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpotTests-Info.plist"; sourceTree = "<group>"; };
 		B84256CD196C9B03003722D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B84256CF196C9B03003722D9 /* SpotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotTests.m; sourceTree = "<group>"; };
+		B85AFD64196CF02300924734 /* SPConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPConstants.h; sourceTree = "<group>"; };
 		C522D335467140208F98A35A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE1E6EBD08454E3B912FB5EC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		FE1E6EBD08454E3B912FB5EC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +94,6 @@
 				B84256C9196C9B03003722D9 /* SpotTests */,
 				B84256A3196C9B02003722D9 /* Frameworks */,
 				B84256A2196C9B02003722D9 /* Products */,
-				FE1E6EBD08454E3B912FB5EC /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,12 +122,8 @@
 		B84256AA196C9B02003722D9 /* Spot */ = {
 			isa = PBXGroup;
 			children = (
-				B84256B3196C9B02003722D9 /* SPAppDelegate.h */,
-				B84256B4196C9B02003722D9 /* SPAppDelegate.m */,
-				B84256B6196C9B02003722D9 /* Main.storyboard */,
-				B84256B9196C9B02003722D9 /* SPViewController.h */,
-				B84256BA196C9B02003722D9 /* SPViewController.m */,
-				B84256BC196C9B02003722D9 /* Images.xcassets */,
+				B85AFD5B196CEF8400924734 /* Source */,
+				B85AFD5C196CEF8A00924734 /* Media */,
 				B84256AB196C9B02003722D9 /* Supporting Files */,
 			);
 			path = Spot;
@@ -136,6 +132,7 @@
 		B84256AB196C9B02003722D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE1E6EBD08454E3B912FB5EC /* Pods.xcconfig */,
 				B84256AC196C9B02003722D9 /* Spot-Info.plist */,
 				B84256AD196C9B02003722D9 /* InfoPlist.strings */,
 				B84256B0196C9B02003722D9 /* main.m */,
@@ -160,6 +157,83 @@
 				B84256CC196C9B03003722D9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B85AFD5B196CEF8400924734 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B85AFD64196CF02300924734 /* SPConstants.h */,
+				B85AFD5D196CEF9C00924734 /* Delegate */,
+				B85AFD5E196CEFC000924734 /* UI */,
+				B85AFD63196CEFF500924734 /* API */,
+				B85AFD62196CEFE900924734 /* Utilities */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		B85AFD5C196CEF8A00924734 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				B84256BC196C9B02003722D9 /* Images.xcassets */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		B85AFD5D196CEF9C00924734 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B84256B3196C9B02003722D9 /* SPAppDelegate.h */,
+				B84256B4196C9B02003722D9 /* SPAppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		B85AFD5E196CEFC000924734 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B85AFD61196CEFDA00924734 /* Common */,
+				B85AFD60196CEFD100924734 /* Controllers */,
+				B85AFD5F196CEFC900924734 /* Storyboards */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		B85AFD5F196CEFC900924734 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B84256B6196C9B02003722D9 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B85AFD60196CEFD100924734 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B84256B9196C9B02003722D9 /* SPViewController.h */,
+				B84256BA196C9B02003722D9 /* SPViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B85AFD61196CEFDA00924734 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		B85AFD62196CEFE900924734 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		B85AFD63196CEFF500924734 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
