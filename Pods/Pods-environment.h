@@ -60,3 +60,9 @@
 #define COCOAPODS_VERSION_MINOR_SDWebImage_Core 6
 #define COCOAPODS_VERSION_PATCH_SDWebImage_Core 0
 
+// TLDataManager
+#define COCOAPODS_POD_AVAILABLE_TLDataManager
+#define COCOAPODS_VERSION_MAJOR_TLDataManager 0
+#define COCOAPODS_VERSION_MINOR_TLDataManager 5
+#define COCOAPODS_VERSION_PATCH_TLDataManager 0
+

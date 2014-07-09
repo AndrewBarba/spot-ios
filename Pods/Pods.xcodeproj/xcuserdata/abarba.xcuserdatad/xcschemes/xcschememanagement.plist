@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-TLDataManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>77B48A4077844155A99094AD</key>
+		<key>00FA058F80A94618B6E6F552</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>923B938157E04D9092051459</key>
+		<key>0657211F1E6D482D839FE394</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F759BC8A3E60474081F39C7D</key>
+		<key>A0522188AEF54FC2971CC5F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C28F984AFB894528B230FF03</key>
 		<dict>
 			<key>primary</key>
 			<true/>

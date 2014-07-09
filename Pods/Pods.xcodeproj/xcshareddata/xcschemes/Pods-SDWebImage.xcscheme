@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B84256A0196C9B02003722D9"
-               BuildableName = "Spot.app"
-               BlueprintName = "Spot"
-               ReferencedContainer = "container:Spot.xcodeproj">
+               BlueprintIdentifier = "77B48A4077844155A99094AD"
+               BuildableName = "libPods-SDWebImage.a"
+               BlueprintName = "Pods-SDWebImage"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B84256C1196C9B03003722D9"
-               BuildableName = "SpotTests.xctest"
-               BlueprintName = "SpotTests"
-               ReferencedContainer = "container:Spot.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B84256A0196C9B02003722D9"
-            BuildableName = "Spot.app"
-            BlueprintName = "Spot"
-            ReferencedContainer = "container:Spot.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -58,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B84256A0196C9B02003722D9"
-            BuildableName = "Spot.app"
-            BlueprintName = "Spot"
-            ReferencedContainer = "container:Spot.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -76,15 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B84256A0196C9B02003722D9"
-            BuildableName = "Spot.app"
-            BlueprintName = "Spot"
-            ReferencedContainer = "container:Spot.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
