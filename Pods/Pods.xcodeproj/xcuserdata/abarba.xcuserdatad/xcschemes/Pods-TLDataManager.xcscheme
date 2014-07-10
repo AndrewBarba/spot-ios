@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1C79D71B9B774DB898FFC723"
+               BlueprintIdentifier = "ADBA4B604CD84DFDAF0F8964"
                BuildableName = "libPods-TLDataManager.a"
                BlueprintName = "Pods-TLDataManager"
                ReferencedContainer = "container:Pods.xcodeproj">
