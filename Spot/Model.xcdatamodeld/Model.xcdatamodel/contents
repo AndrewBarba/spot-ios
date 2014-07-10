@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SPComment" representedClassName="SPComment" parentEntity="SPObject" syncable="YES">
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="spot" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SPSpot" inverseName="comments" inverseEntity="SPSpot" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SPUser" inverseName="comments" inverseEntity="SPUser" syncable="YES"/>
+    </entity>
+    <entity name="SPGroup" representedClassName="SPGroup" parentEntity="SPObject" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <relationship name="relationships" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SPRelationship" inverseName="group" inverseEntity="SPRelationship" syncable="YES"/>
+        <relationship name="spots" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SPSpot" inverseName="groups" inverseEntity="SPSpot" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SPUser" inverseName="groups" inverseEntity="SPUser" syncable="YES"/>
+    </entity>
+    <entity name="SPObject" representedClassName="SPObject" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="SPRelationship" representedClassName="SPRelationship" parentEntity="SPObject" syncable="YES">
+        <attribute name="blocked" optional="YES" attributeType="Boolean" indexed="YES" syncable="YES"/>
+        <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SPUser" inverseName="fromRelationship" inverseEntity="SPUser" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SPGroup" inverseName="relationships" inverseEntity="SPGroup" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SPUser" inverseName="toRelationship" inverseEntity="SPUser" syncable="YES"/>
+    </entity>
+    <entity name="SPSpot" representedClassName="SPSpot" parentEntity="SPObject" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" indexed="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SPComment" inverseName="spot" inverseEntity="SPComment" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SPGroup" inverseName="spots" inverseEntity="SPGroup" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SPUser" inverseName="spots" inverseEntity="SPUser" syncable="YES"/>
+    </entity>
+    <entity name="SPUser" representedClassName="SPUser" parentEntity="SPObject" syncable="YES">
+        <attribute name="currentUser" optional="YES" attributeType="Boolean" indexed="YES" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrlPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SPComment" inverseName="user" inverseEntity="SPComment" syncable="YES"/>
+        <relationship name="fromRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SPRelationship" inverseName="fromUser" inverseEntity="SPRelationship" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SPGroup" inverseName="user" inverseEntity="SPGroup" syncable="YES"/>
+        <relationship name="spots" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SPSpot" inverseName="user" inverseEntity="SPSpot" syncable="YES"/>
+        <relationship name="toRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SPRelationship" inverseName="toUser" inverseEntity="SPRelationship" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SPUser" positionX="25" positionY="-63" width="128" height="193"/>
+        <element name="SPGroup" positionX="-605" positionY="-153" width="128" height="118"/>
+        <element name="SPRelationship" positionX="-387" positionY="143" width="128" height="118"/>
+        <element name="SPSpot" positionX="-362" positionY="-232" width="128" height="148"/>
+        <element name="SPComment" positionX="-146" positionY="-297" width="128" height="88"/>
+        <element name="SPObject" positionX="-243" positionY="9" width="128" height="88"/>
+    </elements>
+</model>

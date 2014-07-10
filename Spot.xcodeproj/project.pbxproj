@@ -23,6 +23,26 @@
 		B84256C6196C9B03003722D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84256A8196C9B02003722D9 /* UIKit.framework */; };
 		B84256CE196C9B03003722D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B84256CC196C9B03003722D9 /* InfoPlist.strings */; };
 		B84256D0196C9B03003722D9 /* SpotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B84256CF196C9B03003722D9 /* SpotTests.m */; };
+		B8C0C9DE196E3A410069C407 /* SPKeychainService.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9DD196E3A410069C407 /* SPKeychainService.m */; };
+		B8C0C9E2196E3A900069C407 /* SPDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9E1196E3A900069C407 /* SPDispatch.m */; };
+		B8C0C9E6196E3B460069C407 /* SPHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9E5196E3B460069C407 /* SPHTTPClient.m */; };
+		B8C0C9E9196E3BAE0069C407 /* NSError+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9E8196E3BAE0069C407 /* NSError+SP.m */; };
+		B8C0C9EC196E3BE30069C407 /* SPJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9EB196E3BE30069C407 /* SPJSONResponseSerializer.m */; };
+		B8C0C9F1196E3CBC0069C407 /* SPService.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9F0196E3CBC0069C407 /* SPService.m */; };
+		B8C0C9F4196E3D140069C407 /* SPBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9F3196E3D140069C407 /* SPBuild.m */; };
+		B8C0C9F8196E3DA60069C407 /* UIView+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9F7196E3DA60069C407 /* UIView+SP.m */; };
+		B8C0C9FB196E3E020069C407 /* NSDictionary+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9FA196E3E020069C407 /* NSDictionary+SP.m */; };
+		B8C0C9FE196E3E540069C407 /* NSDate+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9FD196E3E540069C407 /* NSDate+SP.m */; };
+		B8C0CA04196E3F2B0069C407 /* SPBackendClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA03196E3F2B0069C407 /* SPBackendClient.m */; };
+		B8C0CA07196E40080069C407 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA05196E40080069C407 /* Model.xcdatamodeld */; };
+		B8C0CA2E196E44C20069C407 /* SPObject+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA2D196E44C20069C407 /* SPObject+SP.m */; };
+		B8C0CA32196E45110069C407 /* SPUser+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA31196E45110069C407 /* SPUser+SP.m */; };
+		B8C0CA38196E45750069C407 /* SPRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA37196E45750069C407 /* SPRelationship.m */; };
+		B8C0CA3B196E45750069C407 /* SPSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA3A196E45750069C407 /* SPSpot.m */; };
+		B8C0CA3E196E45750069C407 /* SPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA3D196E45750069C407 /* SPObject.m */; };
+		B8C0CA41196E45750069C407 /* SPComment.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA40196E45750069C407 /* SPComment.m */; };
+		B8C0CA44196E45750069C407 /* SPGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA43196E45750069C407 /* SPGroup.m */; };
+		B8C0CA47196E45B80069C407 /* SPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA46196E45B80069C407 /* SPUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +77,45 @@
 		B84256CD196C9B03003722D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B84256CF196C9B03003722D9 /* SpotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotTests.m; sourceTree = "<group>"; };
 		B85AFD64196CF02300924734 /* SPConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPConstants.h; sourceTree = "<group>"; };
+		B8C0C9DC196E3A410069C407 /* SPKeychainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPKeychainService.h; sourceTree = "<group>"; };
+		B8C0C9DD196E3A410069C407 /* SPKeychainService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPKeychainService.m; sourceTree = "<group>"; };
+		B8C0C9E0196E3A900069C407 /* SPDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDispatch.h; sourceTree = "<group>"; };
+		B8C0C9E1196E3A900069C407 /* SPDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDispatch.m; sourceTree = "<group>"; };
+		B8C0C9E4196E3B460069C407 /* SPHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHTTPClient.h; sourceTree = "<group>"; };
+		B8C0C9E5196E3B460069C407 /* SPHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHTTPClient.m; sourceTree = "<group>"; };
+		B8C0C9E7196E3BAE0069C407 /* NSError+SP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+SP.h"; sourceTree = "<group>"; };
+		B8C0C9E8196E3BAE0069C407 /* NSError+SP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+SP.m"; sourceTree = "<group>"; };
+		B8C0C9EA196E3BE30069C407 /* SPJSONResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPJSONResponseSerializer.h; sourceTree = "<group>"; };
+		B8C0C9EB196E3BE30069C407 /* SPJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPJSONResponseSerializer.m; sourceTree = "<group>"; };
+		B8C0C9EF196E3CBC0069C407 /* SPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPService.h; sourceTree = "<group>"; };
+		B8C0C9F0196E3CBC0069C407 /* SPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPService.m; sourceTree = "<group>"; };
+		B8C0C9F2196E3D140069C407 /* SPBuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBuild.h; sourceTree = "<group>"; };
+		B8C0C9F3196E3D140069C407 /* SPBuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBuild.m; sourceTree = "<group>"; };
+		B8C0C9F6196E3DA60069C407 /* UIView+SP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SP.h"; sourceTree = "<group>"; };
+		B8C0C9F7196E3DA60069C407 /* UIView+SP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SP.m"; sourceTree = "<group>"; };
+		B8C0C9F9196E3E020069C407 /* NSDictionary+SP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SP.h"; sourceTree = "<group>"; };
+		B8C0C9FA196E3E020069C407 /* NSDictionary+SP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SP.m"; sourceTree = "<group>"; };
+		B8C0C9FC196E3E540069C407 /* NSDate+SP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SP.h"; sourceTree = "<group>"; };
+		B8C0C9FD196E3E540069C407 /* NSDate+SP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SP.m"; sourceTree = "<group>"; };
+		B8C0CA02196E3F2B0069C407 /* SPBackendClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBackendClient.h; sourceTree = "<group>"; };
+		B8C0CA03196E3F2B0069C407 /* SPBackendClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBackendClient.m; sourceTree = "<group>"; };
+		B8C0CA06196E40080069C407 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		B8C0CA2C196E44C20069C407 /* SPObject+SP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPObject+SP.h"; sourceTree = "<group>"; };
+		B8C0CA2D196E44C20069C407 /* SPObject+SP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPObject+SP.m"; sourceTree = "<group>"; };
+		B8C0CA30196E45110069C407 /* SPUser+SP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPUser+SP.h"; sourceTree = "<group>"; };
+		B8C0CA31196E45110069C407 /* SPUser+SP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPUser+SP.m"; sourceTree = "<group>"; };
+		B8C0CA36196E45750069C407 /* SPRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRelationship.h; sourceTree = "<group>"; };
+		B8C0CA37196E45750069C407 /* SPRelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRelationship.m; sourceTree = "<group>"; };
+		B8C0CA39196E45750069C407 /* SPSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSpot.h; sourceTree = "<group>"; };
+		B8C0CA3A196E45750069C407 /* SPSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSpot.m; sourceTree = "<group>"; };
+		B8C0CA3C196E45750069C407 /* SPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPObject.h; sourceTree = "<group>"; };
+		B8C0CA3D196E45750069C407 /* SPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPObject.m; sourceTree = "<group>"; };
+		B8C0CA3F196E45750069C407 /* SPComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPComment.h; sourceTree = "<group>"; };
+		B8C0CA40196E45750069C407 /* SPComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPComment.m; sourceTree = "<group>"; };
+		B8C0CA42196E45750069C407 /* SPGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGroup.h; sourceTree = "<group>"; };
+		B8C0CA43196E45750069C407 /* SPGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGroup.m; sourceTree = "<group>"; };
+		B8C0CA45196E45B80069C407 /* SPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUser.h; sourceTree = "<group>"; };
+		B8C0CA46196E45B80069C407 /* SPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUser.m; sourceTree = "<group>"; };
 		C522D335467140208F98A35A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1E6EBD08454E3B912FB5EC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +284,12 @@
 		B85AFD62196CEFE900924734 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B8C0C9ED196E3C960069C407 /* Build */,
+				B8C0C9F5196E3D8D0069C407 /* Categories */,
+				B8C0C9DF196E3A820069C407 /* Concurrency */,
+				B8C0C9DB196E3A280069C407 /* Keychain */,
+				B8C0C9EE196E3CA00069C407 /* Service */,
+				B8C0C9E3196E3B370069C407 /* HTTP Client */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -232,8 +297,145 @@
 		B85AFD63196CEFF500924734 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B8C0CA01196E3F0B0069C407 /* Model */,
+				B8C0C9FF196E3EFE0069C407 /* Backend Client */,
+				B8C0CA00196E3F040069C407 /* Services */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		B8C0C9DB196E3A280069C407 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0C9DC196E3A410069C407 /* SPKeychainService.h */,
+				B8C0C9DD196E3A410069C407 /* SPKeychainService.m */,
+			);
+			name = Keychain;
+			sourceTree = "<group>";
+		};
+		B8C0C9DF196E3A820069C407 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0C9E0196E3A900069C407 /* SPDispatch.h */,
+				B8C0C9E1196E3A900069C407 /* SPDispatch.m */,
+			);
+			name = Concurrency;
+			sourceTree = "<group>";
+		};
+		B8C0C9E3196E3B370069C407 /* HTTP Client */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0C9E4196E3B460069C407 /* SPHTTPClient.h */,
+				B8C0C9E5196E3B460069C407 /* SPHTTPClient.m */,
+				B8C0C9E7196E3BAE0069C407 /* NSError+SP.h */,
+				B8C0C9E8196E3BAE0069C407 /* NSError+SP.m */,
+				B8C0C9EA196E3BE30069C407 /* SPJSONResponseSerializer.h */,
+				B8C0C9EB196E3BE30069C407 /* SPJSONResponseSerializer.m */,
+			);
+			name = "HTTP Client";
+			sourceTree = "<group>";
+		};
+		B8C0C9ED196E3C960069C407 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0C9F2196E3D140069C407 /* SPBuild.h */,
+				B8C0C9F3196E3D140069C407 /* SPBuild.m */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		B8C0C9EE196E3CA00069C407 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0C9EF196E3CBC0069C407 /* SPService.h */,
+				B8C0C9F0196E3CBC0069C407 /* SPService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		B8C0C9F5196E3D8D0069C407 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0C9F6196E3DA60069C407 /* UIView+SP.h */,
+				B8C0C9F7196E3DA60069C407 /* UIView+SP.m */,
+				B8C0C9F9196E3E020069C407 /* NSDictionary+SP.h */,
+				B8C0C9FA196E3E020069C407 /* NSDictionary+SP.m */,
+				B8C0C9FC196E3E540069C407 /* NSDate+SP.h */,
+				B8C0C9FD196E3E540069C407 /* NSDate+SP.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B8C0C9FF196E3EFE0069C407 /* Backend Client */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0CA02196E3F2B0069C407 /* SPBackendClient.h */,
+				B8C0CA03196E3F2B0069C407 /* SPBackendClient.m */,
+			);
+			name = "Backend Client";
+			sourceTree = "<group>";
+		};
+		B8C0CA00196E3F040069C407 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		B8C0CA01196E3F0B0069C407 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0CA05196E40080069C407 /* Model.xcdatamodeld */,
+				B8C0CA08196E400B0069C407 /* Base Classes */,
+				B8C0CA09196E40180069C407 /* Class Categories */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B8C0CA08196E400B0069C407 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0CA45196E45B80069C407 /* SPUser.h */,
+				B8C0CA46196E45B80069C407 /* SPUser.m */,
+				B8C0CA42196E45750069C407 /* SPGroup.h */,
+				B8C0CA43196E45750069C407 /* SPGroup.m */,
+				B8C0CA3F196E45750069C407 /* SPComment.h */,
+				B8C0CA40196E45750069C407 /* SPComment.m */,
+				B8C0CA3C196E45750069C407 /* SPObject.h */,
+				B8C0CA3D196E45750069C407 /* SPObject.m */,
+				B8C0CA39196E45750069C407 /* SPSpot.h */,
+				B8C0CA3A196E45750069C407 /* SPSpot.m */,
+				B8C0CA36196E45750069C407 /* SPRelationship.h */,
+				B8C0CA37196E45750069C407 /* SPRelationship.m */,
+			);
+			name = "Base Classes";
+			sourceTree = "<group>";
+		};
+		B8C0CA09196E40180069C407 /* Class Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0CA2B196E44AB0069C407 /* Base */,
+				B8C0CA2F196E44FF0069C407 /* User */,
+			);
+			name = "Class Categories";
+			sourceTree = "<group>";
+		};
+		B8C0CA2B196E44AB0069C407 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0CA2C196E44C20069C407 /* SPObject+SP.h */,
+				B8C0CA2D196E44C20069C407 /* SPObject+SP.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		B8C0CA2F196E44FF0069C407 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0CA30196E45110069C407 /* SPUser+SP.h */,
+				B8C0CA31196E45110069C407 /* SPUser+SP.m */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,9 +582,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C0C9F8196E3DA60069C407 /* UIView+SP.m in Sources */,
 				B84256B1196C9B02003722D9 /* main.m in Sources */,
+				B8C0CA07196E40080069C407 /* Model.xcdatamodeld in Sources */,
+				B8C0C9E9196E3BAE0069C407 /* NSError+SP.m in Sources */,
 				B84256BB196C9B02003722D9 /* SPViewController.m in Sources */,
+				B8C0CA04196E3F2B0069C407 /* SPBackendClient.m in Sources */,
+				B8C0CA32196E45110069C407 /* SPUser+SP.m in Sources */,
+				B8C0CA2E196E44C20069C407 /* SPObject+SP.m in Sources */,
+				B8C0CA41196E45750069C407 /* SPComment.m in Sources */,
+				B8C0CA3E196E45750069C407 /* SPObject.m in Sources */,
+				B8C0C9EC196E3BE30069C407 /* SPJSONResponseSerializer.m in Sources */,
+				B8C0C9FE196E3E540069C407 /* NSDate+SP.m in Sources */,
+				B8C0C9DE196E3A410069C407 /* SPKeychainService.m in Sources */,
+				B8C0C9F4196E3D140069C407 /* SPBuild.m in Sources */,
+				B8C0C9F1196E3CBC0069C407 /* SPService.m in Sources */,
 				B84256B5196C9B02003722D9 /* SPAppDelegate.m in Sources */,
+				B8C0CA47196E45B80069C407 /* SPUser.m in Sources */,
+				B8C0CA3B196E45750069C407 /* SPSpot.m in Sources */,
+				B8C0C9FB196E3E020069C407 /* NSDictionary+SP.m in Sources */,
+				B8C0CA38196E45750069C407 /* SPRelationship.m in Sources */,
+				B8C0C9E2196E3A900069C407 /* SPDispatch.m in Sources */,
+				B8C0CA44196E45750069C407 /* SPGroup.m in Sources */,
+				B8C0C9E6196E3B460069C407 /* SPHTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,6 +899,19 @@
 			defaultConfigurationName = "App Store";
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B8C0CA05196E40080069C407 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B8C0CA06196E40080069C407 /* Model.xcdatamodel */,
+			);
+			currentVersion = B8C0CA06196E40080069C407 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B8425699196C9B02003722D9 /* Project object */;
 }

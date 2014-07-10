@@ -12,8 +12,8 @@
 
 //------------------------------------------ SERVERS
 
-#define SP_API_PROD @"https://api.example.com"
-#define SP_API_DEV @"https://api-dev.example.com"
+#define SP_API_PROD @"https://spot-api.herokuapp.com"
+#define SP_API_DEV @"https://spot-api.herokuapp.com"
 #define SP_LOG_REQUESTS 0
 
 //------------------------------------------ NOTIFICATIONS
