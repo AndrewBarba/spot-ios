@@ -20,4 +20,9 @@
     #import "UIView+SP.h"
     #import "NSDate+SP.h"
     #import "SPObject+SP.h"
+    #import "SPUser+SP.h"
+    #import "SPGroup+SP.h"
+    #import "SPRelationship+SP.h"
+    #import "SPSpot+SP.h"
+    #import "SPComment+SP.h"
 #endif

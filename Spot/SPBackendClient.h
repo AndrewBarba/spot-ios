@@ -10,7 +10,11 @@
 #import "SPHTTPClient.h"
 
 // SPObject Blocks
-// fill in
+typedef void (^SPUserBlock)          (SPUser *user, NSError *error);
+typedef void (^SPGroupBlock)         (SPGroup *group, NSError *error);
+typedef void (^SPRelationshipBlock)  (SPRelationship *relationship, NSError *error);
+typedef void (^SPSpotBlock)          (SPSpot *spot, NSError *error);
+typedef void (^SPCommentBlock)       (SPComment *comment, NSError *error);
 
 // Common completion blocks
 typedef void (^SPAPIRequestBlock)    (id object, NSError *error);

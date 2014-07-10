@@ -43,6 +43,10 @@
 		B8C0CA41196E45750069C407 /* SPComment.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA40196E45750069C407 /* SPComment.m */; };
 		B8C0CA44196E45750069C407 /* SPGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA43196E45750069C407 /* SPGroup.m */; };
 		B8C0CA47196E45B80069C407 /* SPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA46196E45B80069C407 /* SPUser.m */; };
+		B8C0CA4B196E46240069C407 /* SPGroup+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA4A196E46240069C407 /* SPGroup+SP.m */; };
+		B8C0CA4F196E46500069C407 /* SPRelationship+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA4E196E46500069C407 /* SPRelationship+SP.m */; };
+		B8C0CA53196E466B0069C407 /* SPSpot+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA52196E466B0069C407 /* SPSpot+SP.m */; };
+		B8C0CA57196E46960069C407 /* SPComment+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0CA56196E46960069C407 /* SPComment+SP.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +120,14 @@
 		B8C0CA43196E45750069C407 /* SPGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGroup.m; sourceTree = "<group>"; };
 		B8C0CA45196E45B80069C407 /* SPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUser.h; sourceTree = "<group>"; };
 		B8C0CA46196E45B80069C407 /* SPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUser.m; sourceTree = "<group>"; };
+		B8C0CA49196E46240069C407 /* SPGroup+SP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPGroup+SP.h"; sourceTree = "<group>"; };
+		B8C0CA4A196E46240069C407 /* SPGroup+SP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPGroup+SP.m"; sourceTree = "<group>"; };
+		B8C0CA4D196E46500069C407 /* SPRelationship+SP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPRelationship+SP.h"; sourceTree = "<group>"; };
+		B8C0CA4E196E46500069C407 /* SPRelationship+SP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPRelationship+SP.m"; sourceTree = "<group>"; };
+		B8C0CA51196E466B0069C407 /* SPSpot+SP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPSpot+SP.h"; sourceTree = "<group>"; };
+		B8C0CA52196E466B0069C407 /* SPSpot+SP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPSpot+SP.m"; sourceTree = "<group>"; };
+		B8C0CA55196E46960069C407 /* SPComment+SP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPComment+SP.h"; sourceTree = "<group>"; };
+		B8C0CA56196E46960069C407 /* SPComment+SP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SPComment+SP.m"; sourceTree = "<group>"; };
 		C522D335467140208F98A35A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1E6EBD08454E3B912FB5EC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -416,6 +428,10 @@
 			children = (
 				B8C0CA2B196E44AB0069C407 /* Base */,
 				B8C0CA2F196E44FF0069C407 /* User */,
+				B8C0CA48196E46160069C407 /* Group */,
+				B8C0CA4C196E46440069C407 /* Relationship */,
+				B8C0CA50196E465F0069C407 /* Spot */,
+				B8C0CA54196E46890069C407 /* Comment */,
 			);
 			name = "Class Categories";
 			sourceTree = "<group>";
@@ -436,6 +452,42 @@
 				B8C0CA31196E45110069C407 /* SPUser+SP.m */,
 			);
 			name = User;
+			sourceTree = "<group>";
+		};
+		B8C0CA48196E46160069C407 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0CA49196E46240069C407 /* SPGroup+SP.h */,
+				B8C0CA4A196E46240069C407 /* SPGroup+SP.m */,
+			);
+			name = Group;
+			sourceTree = "<group>";
+		};
+		B8C0CA4C196E46440069C407 /* Relationship */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0CA4D196E46500069C407 /* SPRelationship+SP.h */,
+				B8C0CA4E196E46500069C407 /* SPRelationship+SP.m */,
+			);
+			name = Relationship;
+			sourceTree = "<group>";
+		};
+		B8C0CA50196E465F0069C407 /* Spot */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0CA51196E466B0069C407 /* SPSpot+SP.h */,
+				B8C0CA52196E466B0069C407 /* SPSpot+SP.m */,
+			);
+			name = Spot;
+			sourceTree = "<group>";
+		};
+		B8C0CA54196E46890069C407 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				B8C0CA55196E46960069C407 /* SPComment+SP.h */,
+				B8C0CA56196E46960069C407 /* SPComment+SP.m */,
+			);
+			name = Comment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -587,20 +639,24 @@
 				B8C0CA07196E40080069C407 /* Model.xcdatamodeld in Sources */,
 				B8C0C9E9196E3BAE0069C407 /* NSError+SP.m in Sources */,
 				B84256BB196C9B02003722D9 /* SPViewController.m in Sources */,
+				B8C0CA57196E46960069C407 /* SPComment+SP.m in Sources */,
 				B8C0CA04196E3F2B0069C407 /* SPBackendClient.m in Sources */,
 				B8C0CA32196E45110069C407 /* SPUser+SP.m in Sources */,
 				B8C0CA2E196E44C20069C407 /* SPObject+SP.m in Sources */,
 				B8C0CA41196E45750069C407 /* SPComment.m in Sources */,
 				B8C0CA3E196E45750069C407 /* SPObject.m in Sources */,
 				B8C0C9EC196E3BE30069C407 /* SPJSONResponseSerializer.m in Sources */,
+				B8C0CA4F196E46500069C407 /* SPRelationship+SP.m in Sources */,
 				B8C0C9FE196E3E540069C407 /* NSDate+SP.m in Sources */,
 				B8C0C9DE196E3A410069C407 /* SPKeychainService.m in Sources */,
+				B8C0CA4B196E46240069C407 /* SPGroup+SP.m in Sources */,
 				B8C0C9F4196E3D140069C407 /* SPBuild.m in Sources */,
 				B8C0C9F1196E3CBC0069C407 /* SPService.m in Sources */,
 				B84256B5196C9B02003722D9 /* SPAppDelegate.m in Sources */,
 				B8C0CA47196E45B80069C407 /* SPUser.m in Sources */,
 				B8C0CA3B196E45750069C407 /* SPSpot.m in Sources */,
 				B8C0C9FB196E3E020069C407 /* NSDictionary+SP.m in Sources */,
+				B8C0CA53196E466B0069C407 /* SPSpot+SP.m in Sources */,
 				B8C0CA38196E45750069C407 /* SPRelationship.m in Sources */,
 				B8C0C9E2196E3A900069C407 /* SPDispatch.m in Sources */,
 				B8C0CA44196E45750069C407 /* SPGroup.m in Sources */,
