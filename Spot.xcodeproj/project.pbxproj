@@ -230,6 +230,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B8584652196F25B800344F8D /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
 		B85AFD5B196CEF8400924734 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +303,7 @@
 		B85AFD62196CEFE900924734 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B8584652196F25B800344F8D /* Facebook */,
 				B8C0C9ED196E3C960069C407 /* Build */,
 				B8C0C9F5196E3D8D0069C407 /* Categories */,
 				B8C0C9DF196E3A820069C407 /* Concurrency */,
@@ -788,6 +796,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Barba (3HBALB27CG)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Barba (3HBALB27CG)";
+				ENV = development;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spot/Spot-Prefix.pch";
 				INFOPLIST_FILE = "Spot/Spot-Info.plist";
@@ -805,6 +814,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Barba (EVJS956X67)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Barba (EVJS956X67)";
+				ENV = production;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spot/Spot-Prefix.pch";
 				INFOPLIST_FILE = "Spot/Spot-Info.plist";
@@ -894,6 +904,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Barba (EVJS956X67)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Barba (EVJS956X67)";
+				ENV = production;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spot/Spot-Prefix.pch";
 				INFOPLIST_FILE = "Spot/Spot-Info.plist";

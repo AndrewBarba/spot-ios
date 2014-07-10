@@ -25,6 +25,13 @@
  */
 @property (nonatomic, strong, readonly) NSString *systemVersion;
 
+/**
+ * Production or development
+ */
+@property (nonatomic, strong, readonly) NSString *environment;
+@property (nonatomic, readonly) BOOL isProduction;
+@property (nonatomic, readonly) BOOL isDevelopment;
+
 // shared build
 + (instancetype)currentBuild;
 

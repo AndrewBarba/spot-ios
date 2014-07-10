@@ -66,7 +66,8 @@
 
 - (NSString *)urlPathForEndpoint:(NSString *)endpoint
 {
-    NSString *path = [NSString stringWithFormat:@"%@%@", SP_API_PROD, endpoint];
+    NSString *api = [SPBuild currentBuild].isProduction ? SP_API_PROD : SP_API_DEV;
+    NSString *path = [NSString stringWithFormat:@"%@%@", api, endpoint];
     NSString *defaultParmas = [self defaultParamatersString];
     if ([path rangeOfString:@"?"].location == NSNotFound) {
         path = [path stringByAppendingFormat:@"?%@", defaultParmas];

@@ -16,6 +16,9 @@
     
     _appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     _buildVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    _environment = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"SPEnvironment"];
+    _isProduction = [_environment isEqualToString:@"production"];
+    _isDevelopment = [_environment isEqualToString:@"development"] || !_isProduction;
     _systemVersion = [[UIDevice currentDevice] systemVersion];
 }
 
