@@ -23,6 +23,7 @@
 		B84256C6196C9B03003722D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84256A8196C9B02003722D9 /* UIKit.framework */; };
 		B84256CE196C9B03003722D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B84256CC196C9B03003722D9 /* InfoPlist.strings */; };
 		B84256D0196C9B03003722D9 /* SpotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B84256CF196C9B03003722D9 /* SpotTests.m */; };
+		B8584655196F260A00344F8D /* SPFacebookService.m in Sources */ = {isa = PBXBuildFile; fileRef = B8584654196F260A00344F8D /* SPFacebookService.m */; };
 		B8C0C9DE196E3A410069C407 /* SPKeychainService.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9DD196E3A410069C407 /* SPKeychainService.m */; };
 		B8C0C9E2196E3A900069C407 /* SPDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9E1196E3A900069C407 /* SPDispatch.m */; };
 		B8C0C9E6196E3B460069C407 /* SPHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C0C9E5196E3B460069C407 /* SPHTTPClient.m */; };
@@ -80,6 +81,8 @@
 		B84256CB196C9B03003722D9 /* SpotTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpotTests-Info.plist"; sourceTree = "<group>"; };
 		B84256CD196C9B03003722D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B84256CF196C9B03003722D9 /* SpotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotTests.m; sourceTree = "<group>"; };
+		B8584653196F260900344F8D /* SPFacebookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFacebookService.h; sourceTree = "<group>"; };
+		B8584654196F260A00344F8D /* SPFacebookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFacebookService.m; sourceTree = "<group>"; };
 		B85AFD64196CF02300924734 /* SPConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPConstants.h; sourceTree = "<group>"; };
 		B8C0C9DC196E3A410069C407 /* SPKeychainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPKeychainService.h; sourceTree = "<group>"; };
 		B8C0C9DD196E3A410069C407 /* SPKeychainService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPKeychainService.m; sourceTree = "<group>"; };
@@ -233,6 +236,8 @@
 		B8584652196F25B800344F8D /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				B8584653196F260900344F8D /* SPFacebookService.h */,
+				B8584654196F260A00344F8D /* SPFacebookService.m */,
 			);
 			name = Facebook;
 			sourceTree = "<group>";
@@ -303,13 +308,13 @@
 		B85AFD62196CEFE900924734 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				B8584652196F25B800344F8D /* Facebook */,
 				B8C0C9ED196E3C960069C407 /* Build */,
 				B8C0C9F5196E3D8D0069C407 /* Categories */,
 				B8C0C9DF196E3A820069C407 /* Concurrency */,
+				B8584652196F25B800344F8D /* Facebook */,
+				B8C0C9E3196E3B370069C407 /* HTTP Client */,
 				B8C0C9DB196E3A280069C407 /* Keychain */,
 				B8C0C9EE196E3CA00069C407 /* Service */,
-				B8C0C9E3196E3B370069C407 /* HTTP Client */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -650,6 +655,7 @@
 				B8C0CA57196E46960069C407 /* SPComment+SP.m in Sources */,
 				B8C0CA04196E3F2B0069C407 /* SPBackendClient.m in Sources */,
 				B8C0CA32196E45110069C407 /* SPUser+SP.m in Sources */,
+				B8584655196F260A00344F8D /* SPFacebookService.m in Sources */,
 				B8C0CA2E196E44C20069C407 /* SPObject+SP.m in Sources */,
 				B8C0CA41196E45750069C407 /* SPComment.m in Sources */,
 				B8C0CA3E196E45750069C407 /* SPObject.m in Sources */,
